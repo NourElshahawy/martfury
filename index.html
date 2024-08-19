@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martfury</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <header class="main">
+        <nav>
+            <!-- navbar max width 1024px -->
+                <div class="navbar-responsive">
+                    <div class="menu-bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    </div>
+                    <div class="logo">
+                        <img src="assets/imgs/logo/logo_light.png" loading="lazy" alt="">
+                    </div>
+                    <div class="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                    </div>
+                </div>
+                <div class="navbar-lower">
+                    <div class="home">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                        <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                        <p>home</p>
+                    </div>
+                    <div class="profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000">
+                        <path d="M480-481q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160-160v-94q0-38 19-65t49-41q67-30 128.5-45T480-420q62 0 123 15.5t127.92 44.69q31.3 14.13 50.19 40.97Q800-292 800-254v94H160Zm60-60h520v-34q0-16-9.5-30.5T707-306q-64-31-117-42.5T480-360q-57 0-111 11.5T252-306q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570-631q0-39-25.5-64.5T480-721q-39 0-64.5 25.5T390-631q0 39 25.5 64.5T480-541Zm0-90Zm0 411Z"/></svg>
+                        <p>profile</p>
+                    </div>
+                    <div class="wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000">
+                        <path d="m480-121-41-37q-105.77-97.12-174.88-167.56Q195-396 154-451.5T96.5-552Q80-597 80-643q0-90.15 60.5-150.58Q201-854 290-854q57 0 105.5 27t84.5 78q42-54 89-79.5T670-854q89 0 149.5 60.42Q880-733.15 880-643q0 46-16.5 91T806-451.5Q765-396 695.88-325.56 626.77-255.12 521-158l-41 37Zm0-79q101.24-93 166.62-159.5Q712-426 750.5-476t54-89.14q15.5-39.13 15.5-77.72 0-66.14-42-108.64T670.22-794q-51.52 0-95.37 31.5T504-674h-49q-26-56-69.85-88-43.85-32-95.37-32Q224-794 182-751.5t-42 108.82q0 38.68 15.5 78.18 15.5 39.5 54 90T314-358q66 66 166 158Zm0-297Z"/></svg>
+                        <p>wishlist</p>
+                    </div>
+                    <div class="shopping-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000">
+                        <path d="M180-80q-24.75 0-42.37-17.63Q120-115.25 120-140v-530q0-24.75 17.63-42.38Q155.25-730 180-730h110q0-78 53.5-134T475-920q80.92 0 137.96 55Q670-810 670-730h110q24.75 0 42.38 17.62Q840-694.75 840-670v530q0 24.75-17.62 42.37Q804.75-80 780-80H180Zm0-60h600v-530H180v530Zm300-290q79 0 137-58t58-137h-60q0 55-40 95t-95 40q-55 0-95-40t-40-95h-60q0 79 58 137t137 58ZM350-730h260q0-55-37.5-92.5T480-860q-55 0-92.5 37.5T350-730ZM180-140v-530 530Z"/></svg>
+                        <p>cart</p>
+                    </div>
+                </div>
+                <!-- navbar max width 1024px -->
+            <div class="navbar">
+                
+                <div class="navbar-logo">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/imgs/logo/logo_light.png" loading="lazy" alt="">
+                        </a>
+                    </div>
+                    <div class="search-container">
+                        <input class="search-input" type="text" name="text" id="text" placeholder="i'm shopping for...">
+                        <a href="#" class="search-button">search</a>
+                    </div>
+                    <div class="icons-container">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                            <span class="count">0</span>
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                        </div>
+                        <div class="login-register">
+                            <span>Log in</span>
+                            <span>Register</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <ul class="left-nav">
+                        <div class="item-bar">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                            <li><a href="#">Shop By Department</a></li>
+                        </div>
+                        <li class="main-menu-item">
+                            <a href="#">Home
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-item">
+                                    <a href="#service1" class="sub-menu-link" >Home 1</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service2" class="sub-menu-link" >Home 2</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service3" class="sub-menu-link" >Home 3</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service4" class="sub-menu-link" >Home 4</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Shop 
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-item">
+                                    <a href="#service1" class="sub-menu-link" >Home 1</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service2" class="sub-menu-link" >Home 2</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service3" class="sub-menu-link" >Home 3</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service4" class="sub-menu-link" >Home 4</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Pages 
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-item">
+                                    <a href="#service1" class="sub-menu-link" >Home 1</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service2" class="sub-menu-link" >Home 2</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service3" class="sub-menu-link" >Home 3</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service4" class="sub-menu-link" >Home 4</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Blog 
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-item">
+                                    <a href="#service1" class="sub-menu-link" >Home 1</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service2" class="sub-menu-link" >Home 2</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service3" class="sub-menu-link" >Home 3</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service4" class="sub-menu-link" >Home 4</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Buy Theme 
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-item">
+                                    <a href="#service1" class="sub-menu-link" >Home 1</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service2" class="sub-menu-link" >Home 2</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service3" class="sub-menu-link" >Home 3</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service4" class="sub-menu-link" >Home 4</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="right-nav">
+                        <li> <a href="#">Track Your Order</a></li>
+                        <span></span>
+                        <li><a href="#">VND ₫ | Vietnam</a></li>
+                        <span></span>
+                        <li class="main-menu-item">
+                            <a href="#">english
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-item">
+                                    <a href="#service1" class="sub-menu-link" >English</a>
+                                </div>
+                                <div class="dropdown-content-menu">
+                                    <a href="#service2" class="sub-menu-link" >Arabic</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- section header -->
+        <section class="header">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="slider">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider1">
+                                    <img src="assets/imgs/header/s1-1.webp" alt="">
+                                    <div class="text-slider">
+                                        <h2>
+                                            Limited Edition
+                                        </h2>
+                                        <div>
+                                            <h3>
+                                                SCADINAVIAN
+                                            </h3>
+                                            <h3>
+                                                COLLECTION FOR YOUR
+                                            </h3>
+                                            <h3>
+                                                BEDROOM JUST <span>$599</span>
+                                            </h3>
+                                        </div>
+                                        <a href="#" class="shop-now">shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider1">
+                                <img src="assets/imgs/header/s2-2.webp" alt="">
+                                <div class="text-slider">
+                                    <h2>
+                                        Limited Edition
+                                    </h2>
+                                    <div>
+                                        <h3>
+                                            SCADINAVIAN
+                                        </h3>
+                                        <h3>
+                                            COLLECTION FOR YOUR
+                                        </h3>
+                                        <h3>
+                                            BEDROOM JUST <span>$599</span>
+                                        </h3>
+                                    </div>
+                                    <a href="#" class="shop-now">shop now</a>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="boxs">
+                        <div class="box">
+                            <img src="assets/imgs/header/bn2.avif" alt="">
+                            <div class="text-box">
+                                <div class="circle">
+                                    <h3>
+                                    unio <br> leather <br> bags
+                                    </h3>
+                                    <a href="#">20% <br> off</a>
+                                </div>
+                                <p>100% leather <br> handmade</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="assets/imgs/header/bn1.avif" alt="">
+                            <div class="text-box">
+                                <div class="circle">
+                                    <h3>
+                                        iphone 6+ <br> 32GB 
+                                    </h3>
+                                    <a href="#">40% <br> off</a>
+                                </div>
+                                <p>experince with <br> best smartphone <br> on the world</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section header end -->
+    </header>
+    <!-- start section elements -->
+    <section class="element">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcc329"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg>
+                        <div class="elment-text">
+                            <h3>
+                                Free Delivery
+                            </h3>
+                            <p>
+                                For all oders over <br> $99
+                            </p>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcc329"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg>
+                        <div class="elment-text">
+                            <h3>
+                                Free Delivery
+                            </h3>
+                            <p>
+                                For all oders over <br> $99
+                            </p>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcc329"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg>
+                        <div class="elment-text">
+                            <h3>
+                                Free Delivery
+                            </h3>
+                            <p>
+                                For all oders over <br> $99
+                            </p>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcc329"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg>
+                        <div class="elment-text">
+                            <h3>
+                                Free Delivery
+                            </h3>
+                            <p>
+                                For all oders over <br> $99
+                            </p>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fcc329"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg>
+                        <div class="elment-text">
+                            <h3>
+                                Free Delivery
+                            </h3>
+                            <p>
+                                For all oders over <br> $99
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    <!-- end section elements -->
+
+    <!-- start section product -->
+    <section class="product">
+        <div class="product-upper">
+            <div class="product-upper-text">
+                <h3>
+                    Deals of the day
+                </h3>
+                <p>
+                    Ends in: 13 : 54 : 09
+                </p>
+            </div>
+            <a href="#">view all</a>
+        </div>
+        <div class="product-middle">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-down">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/imgs/product/b4_0e69e24c-18f7-49b6-851e-49d4896d64d9.webp" alt="">
+                        <div class="text-slider">
+                            <h2>
+                                Acher Fluence
+                            </h2>
+                            <div>
+                                <h3>
+                                    Minimal 
+                                    <br>
+                                    Speaker
+                                </h3>
+                                <h3>
+                                    discount <br> <span>$599.99</span> <del>$265.69</del>
+                                </h3>
+                            </div>
+                            <a href="#" class="shop-now">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/imgs/product/b5_c41a562b-c1fa-4013-b3cf-14cecacdd6a7.jpg" alt="">
+                        <div class="text-slider">
+                            <h2>
+                                Acher Fluence
+                            </h2>
+                            <div>
+                                <h3>
+                                    Minimal 
+                                    <br>
+                                    Speaker
+                                </h3>
+                                <h3>
+                                    discount <br> <span>$599.99</span> <del>$265.69</del>
+                                </h3>
+                            </div>
+                            <a href="#" class="shop-now">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/imgs/product/bn10.webp" alt="">
+                        <div class="text-slider">
+                            <h2>
+                                Acher Fluence
+                            </h2>
+                            <div>
+                                <h3>
+                                    Minimal 
+                                    <br>
+                                    Speaker
+                                </h3>
+                                <h3>
+                                    discount <br> <span>$599.99</span> <del>$265.69</del>
+                                </h3>
+                            </div>
+                            <a href="#" class="shop-now">shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section product -->
+
+    <!-- start sectio category -->
+    <section class="category">
+        <h3>
+            Top Categories Of The Month
+        </h3>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box">
+                    <img src="assets/imgs/category/8a.webp" alt="">
+                    <p>Clothing</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box">
+                    <img src="assets/imgs/category/8a.webp" alt="">
+                    <p>Clothing</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box">
+                    <img src="assets/imgs/category/8a.webp" alt="">
+                    <p>Clothing</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box">
+                    <img src="assets/imgs/category/8a.webp" alt="">
+                    <p>Clothing</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box">
+                    <img src="assets/imgs/category/8a.webp" alt="">
+                    <p>Clothing</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box">
+                    <img src="assets/imgs/category/8a.webp" alt="">
+                    <p>Clothing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end sectio category -->
+
+    <!-- start section product -->
+    <section class="product">
+        <div class="product-upper">
+            <div class=" product-upper-text2">
+                <h3>
+                    Consumer Electronics
+                </h3>
+                <div class="links">
+                    <a href="#">new arrivals</a>
+                    <span class="separator"></span>
+                    <a href="#">best seller</a>
+                    <span class="separator"></span>
+                    <a href="#">view all</a>
+                </div>
+            </div>
+        </div>
+        <div class="product-middle">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/product/30a.webp" alt="">
+                            <span>-44%</span>
+                            <div class="icons-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                                </div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                young shop
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section product -->
+
+    <!-- section offers -->
+    <section class="offers">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="box">
+                    <img src="assets/imgs/offers/b7.webp" alt="">
+                    <div class="offer-content">
+                        <div class="offer-left">
+                            <h2 class="offer-title">FABRIC BED</h2>
+                            <h2 class="offer-title"> DISCOUNT <span class="offer-discount">25% OFF</span></h2>
+                            <p class="offer-description">Strong mattress support with 10 wood </p>
+                            <p class="offer-description"> prevents sagging and increases mattress.</p>
+                        </div>
+                        <div class="offer-right">
+                            <p class="original-price">$200.00</p>
+                            <p class="offer-price">$159.99</p>
+                            <a href="#" class="shop-now">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <img src="assets/imgs/offers/b6_9b4266f9-9970-4cb7-b4a9-f8a3ecf7be6a.webp" alt="">
+                    <div class=" column">
+                        <div>
+                            <h2 class="offer-title">iPhone X 128GB</h2>
+                            <h2 class="offer-title"> Retina Display</h2>
+                        </div>
+                        <p class="offer-description">Discount <span class="offer-discount">25% </span>Off</p>
+                        <a href="#" class="shop-now">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section offers end -->
+
+    <!-- section subscibe -->
+    <section class="subscribe">
+        <div class="row">
+           <div class="col-md-5">
+            <div class="image-section">
+                <img src="assets/imgs/subscribe/b3.webp" alt="App Image">
+            </div>
+           </div>
+           <div class="col-md-5">
+            <div class="content-section">
+                <h2>Download Martfury App Now!</h2>
+                <p>Shopping fastly and easily more with our app. <br> Get a link to download the app on your phone</p>
+                <div class="email-form">
+                    <input type="email" placeholder="Your email">
+                    <button>Subscribe</button>
+                </div>
+                <div class="app-links">
+                    <img src="assets/imgs/subscribe/t1.webp" alt="Google Play">
+                    <img src="assets/imgs/subscribe/t2.webp" alt="App Store">
+                </div>
+            </div>
+           </div>
+            
+        </div>
+    </section>
+    <!-- section subscibe end -->
+
+    <!-- start section product && New Arrivals-->
+    <section class="product new-arrivals">
+        <div class="product-upper">
+            <div class=" product-upper-text2">
+                <h3>
+                    Hot New Arrivals
+                </h3>
+                <div class="links">
+                    <a href="#">computer</a>
+                    <span class="separator"></span>
+                    <a href="#">car electronics</a>
+                    <span class="separator"></span>
+                    <a href="#">air condationers</a>
+                    <span class="separator"></span>
+                    <a href="#">view all</a>
+                </div>
+            </div>
+        </div>
+        <div class="product-middle ">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/arrivals/12c.webp" alt="">
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                sony
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/arrivals/18c.webp" alt="">
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                sony
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/arrivals/13a_4728cd34-ad73-4b78-bbad-6cbd95d658f5.webp" alt="">
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                sony
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/arrivals/14b-600x600.webp" alt="">
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                sony
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/arrivals/4c-600x600_02d63f39-f11f-4a45-ab50-2a6057e36f3a.webp" alt="">
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                sony
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="assets/imgs/arrivals/12c.webp" alt="">
+                        </div>
+                        <div class="elment-text">
+                            <h4>
+                                sony
+                            </h4>
+                            <h5>
+                                Lorem ipsum dolor sit...
+                            </h5>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fcc329"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                                5.0
+                            </div>
+                            <span>26400.00  VND</span>
+                            <del>47000.00 VND</del>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section product && New Arrivals-->
+
+    <!-- start section Newsletter -->
+    <section class="news-letter">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="content-section">
+                    <h2>Newsletter</h2>
+                    <p>Subcribe to get information about products and coupons</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="email-form">
+                    <input type="email" placeholder="Your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section Newsletter -->
+
+    <!-- footer -->
+    <footer class="footer">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box">
+                        <h3>Contact Us</h3>
+                        <p>Call us 24/7</p>
+                        <p class="contact-info">1800 97 97 69</p>
+                        <p>502 New Design Str, Melbourne contact@martfury.co</p>
+                        <div class="social-icons">
+                        <img src="assets/imgs/footer/facebook_media_social_icon_623623a2-3394-4a13-98a3-8c8a1c85979b_x18.svg" alt="Facebook">
+                        <img src="assets/imgs/footer/twitter_icon_e974e446-f6e7-4775-8bad-d4947832b2dd_x18.svg" alt="Twitter">
+                        <img src="assets/imgs/footer/instagram_icon_fe12a967-773e-4ff3-a453-c659db9a4c2f_x18.svg" alt="Instagram">
+                        <img src="assets/imgs/footer/youtube_icon-2_x18.svg" alt="YouTube">
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box"> 
+                        <h3>Quick Links</h3>
+                        <a href="#">Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Return</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box"> 
+                        <h3>Company</h3>
+                        <a href="#">About Us</a>
+                        <a href="#">Career</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box"> 
+                        <h3>Business</h3>
+                        <a href="#">Checkout</a>
+                        <a href="#">My Account</a>
+                        <a href="#">Shop</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- footer end -->
+    <button id="scrollToTopBtn" title="Go to top">^</button>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
